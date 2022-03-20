@@ -1,0 +1,73 @@
+.slick-slide {
+    margin: 0 10px;
+}
+.slick-track{
+    height: 300px;
+}
+.slider-content .box {
+    /* border:2px solid black; */
+    margin: 10px;
+    box-shadow: 0 0 10px 1px #6d6d6d;
+    border-radius: 3px;
+}
+
+.slider-content .box .head,
+.slider-content .box .content {
+    padding: 20px 10px;
+}
+
+.slider-content .box .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/.5;
+}
+
+.slider-content .box .head h1 {
+    color: gold;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.slider-content .box .head h1 .small {
+    color: white;
+    font-size: 20px;
+}
+
+.slider-content .box .head h5 {
+    color: black;
+    font-weight: bold;
+}
+
+.slider-content .box .content {
+    aspect-ratio: 1/.8;
+    overflow-y: auto;
+}
+
+.slider-content .box .content::-webkit-scrollbar {
+    background: rgb(173, 173, 173);
+    width: 7px;
+}
+
+.slider-content .box .content::-webkit-scrollbar-thumb {
+    background: rgb(20, 20, 20);
+}
+
+.slider-content .box .content .offerBtn {
+    width: 60%;
+    display: block;
+    margin: auto;
+    background: gold;
+    color: rgb(29, 29, 29);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px){
+    .slick-track{
+        height: 250px;
+    }
+}
