@@ -37,19 +37,29 @@ header .menu-symbol img {
     cursor: pointer;
 }
 
+.side_nav_clip{
+    position: fixed;
+    top: 0;
+    right:0;
+    clip-path: circle(0 at 100% 0);
+    transition: all .6s ease-out;
+    z-index: 10;
+    background-color: transparent;
+}
 .side-nav {
     /* display: none; */
-    width: 30%;
+    width: 400px;
     height: 100vh;
     box-shadow: 3px 3px 14px 4px #1c1c1c;
-    position: fixed;
-    right: -34%;
-    top: 0;
+    position: relative;
+    /* position: fixed; */
+    /* right: -34%; */
+    /* top: 0; */
     background-color: rgba(255, 255, 255, 1);
     /* backdrop-filter: blur(4px); */
     padding: 50px 0px;
-    transition: all .6s ease-out;
-    z-index: 10;
+    /* transition: all .6s ease-out; */
+    /* z-index: 10; */
 }
 
 .side-nav .poly {
@@ -105,8 +115,8 @@ header .menu-symbol img {
 
 .side-nav .list ul li a {
     text-decoration: none;
-    color: #383838;
-    font-weight: 600;
+    color: #454545;
+    font-weight: 100;
     font-size: 18px;
     font-family: 'Jost', sans-serif;
 }
@@ -117,7 +127,8 @@ header .menu-symbol img {
 }
 
 .side-nav .list ul li:hover {
-    background-image: linear-gradient(to right, #FA5B76, #C039E6);
+    /* background-image: linear-gradient(to right, #FA5B76, #C039E6); */
+    background: linear-gradient(to right, #fd6c85, #e73a5d);
 }
 
 .side-nav .list ul li:hover a {
@@ -126,10 +137,10 @@ header .menu-symbol img {
 
 
 @media only screen and (max-width: 1200px) {
-    .side-nav {
+    /* .side-nav {
         right: -55%;
         width: 50%;
-    }
+    } */
     header .logo img {
         width: 60%;
     }
@@ -141,8 +152,8 @@ header .menu-symbol img {
         width: 80%;
     }
     .side-nav {
-        right: -65%;
-        width: 60%;
+        /* right: -65%; */
+        width: 350px;
     }
     header {
         padding: 20px;
@@ -157,8 +168,8 @@ header .menu-symbol img {
 
 @media only screen and (max-width: 767px) {
     .side-nav {
-        right: -75%;
-        width: 70%;
+        /* right: -75%; */
+        width: 300px;
     }
     header .logo img {
         width: 80%;
@@ -171,8 +182,8 @@ header .menu-symbol img {
 @media only screen and (max-width: 600px) {
     .side-nav {
         box-shadow: none;
-        right: -100%;
-        width: 100%;
+        /* right: -100%; */
+        width: 320px;
     }
     header .logo img {
         width: 100%;

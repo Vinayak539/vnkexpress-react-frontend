@@ -1,3 +1,36 @@
+@font-face {
+    font-family: jost;
+    src: url(./assets/fonts/Jost-Medium.ttf);
+  }
+  @font-face {
+    font-family: roboto;
+    src: url(./assets/fonts/Roboto-Medium.ttf);
+  }
+  @font-face {
+    font-family: quicksand;
+    src: url(./assets/fonts/Quicksand-Medium.ttf);
+  }
+  *{
+      font-family: quicksand;
+  }
+
+  /* color codes 
+  fonts : 
+  #4c4c4c
+  #1d1d1d
+  #fff
+
+
+  borders : #d3d2d2
+
+
+  backgrounds:
+  #111
+  #fd6c85
+   #d660f7
+
+
+  */
 .App {
     text-align: center;
 }
@@ -6,7 +39,9 @@
     height: 40vmin;
     pointer-events: none;
 }
-
+.main{
+    position: relative;
+}
 .banner {
     display: flex;
     flex-direction: column;
@@ -16,12 +51,12 @@
     background-color: aqua;
 }
 
-.t-white {
-    color: white;
+.t-white, .white {
+    color: #fff;
 }
 
-.t-black {
-    color: black;
+.t-black, .black {
+    color: #1d1d1d;
 }
 
 .mod1,
@@ -72,7 +107,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #C039E6;
+    background: #fd6c85;
     border-radius: 30px;
 }
 
@@ -81,20 +116,29 @@ body::-webkit-scrollbar-thumb {
 
 h1,
 h2 {
-    font-family: 'Jost', sans-serif;
+    font-family: jost;
 }
 
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: jost;
 }
 
-p {
-    font-family: 'Quicksand', sans-serif;
+p, li {
+    font-family: quicksand;
+    /* font-size: 14px; */
 }
-
+a{
+    font-family: roboto;
+}
+.page_head{
+    font-family: jost;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color:#4c4c4c
+}
 
 /* special paddings */
 
@@ -123,15 +167,6 @@ p {
 }
 
 
-/* Text Color */
-
-.white {
-    color: #fff;
-}
-
-.black {
-    color: rgb(0, 0, 0);
-}
 
 .purple {
     color: #C039E6
@@ -146,7 +181,8 @@ p {
 
 .bg-purple {
     /* background-image: linear-gradient(to right, #b354ce , #C039E6); */
-    background: linear-gradient(to right, #FA5B76, #C039E6);
+    /* background: linear-gradient(to right, #FA5B76, #C039E6); */
+    background: linear-gradient(to right, #fd6c85, #e73a5d);
 }
 
 body {
@@ -491,6 +527,10 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+    .page_head{
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
     .hero .hero-enq,
     .hero-home .hero-enq {
         width: 90%;

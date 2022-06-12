@@ -1,10 +1,23 @@
 // import Module1 from './modules/mod1.jsx';
 import Home from './modules/home.jsx';
 import About from './modules/about';
+import BookTickets from "./modules/book_tickets";
+import Practice from "./modules/practice";
 import './App.css';
 
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
-    return ( <About />
+    return ( 
+    <BrowserRouter>
+        <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route path="/aboutus" element={ <About/> } />
+            <Route path="/tickets" element={ <BookTickets/> } />
+            <Route path="/practice" element={ <Practice name="Vinayak"/> } />
+        </Routes>
+    </BrowserRouter>
     );
 }
 

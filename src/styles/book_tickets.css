@@ -1,0 +1,34 @@
+.ticket_booking_section{
+    padding:80px 0;
+}
+
+.form_grp{
+    padding: 6px 10px;
+    border: 1px solid #d3d2d2;
+    margin-bottom: 20px;
+}
+.form_grp label{
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 400;
+    color:#4c4c4c
+}
+.form_grp input{
+    border:0;
+    width:100%;
+    display: block;
+}
+.form_grp input:focus{
+    border:0;
+    box-shadow: none;
+    outline: none;
+}
+
+.submit_btn{
+    display: block;
+    width: 100%;
+    padding:10px 0;
+    text-align: center;
+    color:#fff;
+    border:0
+}

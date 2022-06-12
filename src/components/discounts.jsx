@@ -11,26 +11,33 @@ function Discounts(){
         speed: 1500,
         autoplay: true,
         autoplaySpeed: 2000,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        initialSlide: 0,
+        // initialSlide: 0,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 4,
+              slidesToScroll: 1,
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 576,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 1
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 440,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -41,7 +48,7 @@ function Discounts(){
 
 
     return   <div class="slider-content p-m">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <Slider {...settings}>
