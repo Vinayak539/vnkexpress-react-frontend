@@ -3,6 +3,7 @@ import Home from './modules/home.jsx';
 import About from './modules/about';
 import BookTickets from "./modules/book_tickets";
 import Practice from "./modules/practice";
+import BusResults from "./modules/busResults.jsx"
 import './App.css';
 
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/aboutus" element={ <About/> } />
             <Route path="/tickets" element={ <BookTickets/> } />
             <Route path="/practice" element={ <Practice name="Vinayak"/> } />
+            <Route path="/results" element={ <BusResults/> } />
         </Routes>
     </BrowserRouter>
     );

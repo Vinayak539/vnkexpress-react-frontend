@@ -4,13 +4,14 @@ import Offers from '../components/offers';
 import Discounts from '../components/discounts';
 import Footer from '../components/footer';
 import Banner from '../components/banner';
+import AnimatedCards from '../components/animatedCards'
 
 import {useEffect} from 'react';
 import axios from "axios";
 
 function Home(){
     useEffect(() => {
-        axios.get("https://jsonplaceholder.typicode.com/todos")
+        axios.get("https://secret-shelf-13291.herokuapp.com")
           .then((response) => console.log(response.data));
         }, []);
 
@@ -19,7 +20,8 @@ function Home(){
             <Hero/>
             <Banner/>
             <Offers/>
-            <Discounts/>
+            <AnimatedCards/>
+            {/* <Discounts/> */}
             <Footer/>
            </div>
 }
