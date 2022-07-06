@@ -2,10 +2,20 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../styles/busResults.css';
 import busIcon from "../assets/images/icons/bus.png"
+import { useEffect } from 'react';
+import { useHistory,useParams } from "react-router-dom";
 
 import { FaStar } from 'react-icons/fa';
+import axios from "axios";
 
 export default function BusResults(){ 
+
+    const {source, destination, date} = useParams();
+    console.log("here are the params", source, destination, date);
+
+    axios.get("https://secret-shelf-13291.herokuapp.com/?source&destination&date")
+        .then((response) => console.log(response.data));
+        
     return <div>
         <Header/>
         <div className="results_container">

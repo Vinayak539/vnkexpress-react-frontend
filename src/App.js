@@ -17,7 +17,7 @@ function App() {
             <Route path="/aboutus" element={ <About/> } />
             <Route path="/tickets" element={ <BookTickets/> } />
             <Route path="/practice" element={ <Practice name="Vinayak"/> } />
-            <Route path="/results" element={ <BusResults/> } />
+            <Route path="/results/:source/:destination/:date" element={ <BusResults/> } />
         </Routes>
     </BrowserRouter>
     );

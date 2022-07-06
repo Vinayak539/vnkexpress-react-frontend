@@ -13,7 +13,9 @@
   *{
       font-family: quicksand;
   }
-
+    Link:hover{
+        text-decoration: none;
+    }
   /* color codes 
   fonts : 
   #4c4c4c
@@ -136,7 +138,7 @@ a{
 .page_head{
     font-family: jost;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color:#4c4c4c
 }
 
@@ -529,7 +531,7 @@ body {
 @media only screen and (max-width: 767px) {
     .page_head{
         font-size: 32px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
     .hero .hero-enq,
     .hero-home .hero-enq {

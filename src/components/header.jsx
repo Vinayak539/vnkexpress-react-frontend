@@ -16,6 +16,7 @@ function Header(){
 
     return (
         <header>
+            <div className="container p-0">
             <div class="inner"> 
                 <div class="logo">
                     <a href="/"><img src={logo} alt="some image" /></a>
@@ -45,6 +46,7 @@ function Header(){
                         </ul>
                     </div>
                 </nav>
+            </div>
             </div>
        </header>
 

@@ -1,10 +1,12 @@
 .ticket_booking_section{
-    padding:80px 0;
+    padding:20px 0;
 }
 
-.form_grp{
+.form_grp_inner{
     padding: 6px 10px;
     border: 1px solid #d3d2d2;
+}
+.form_grp{
     margin-bottom: 20px;
 }
 .form_grp label{
