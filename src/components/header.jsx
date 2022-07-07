@@ -6,6 +6,7 @@ import menuLogo from '../assets/images/logo.png';
 import menuImg from '../assets/images/list.svg';
 import '../styles/header.css';
 import { FaHome, FaInfo, FaHeadphones } from 'react-icons/fa';
+import closeMenu from '../assets/images/icons/close.png'
 
 import { Link } from "react-router-dom";
 
@@ -31,7 +32,8 @@ function Header(){
                     <div class="poly"></div>
                     <div class="close" onClick={()=>{setSideMenu(false)}}>
                     {/* onclick="closeNav()" */}
-                        <h5>X</h5>
+                        {/* <h5>X</h5> */}
+                        <img src={closeMenu} alt="close menu"></img>
                     </div>
                     <div class="logo">
                         <img src={menuLogo} alt="some image" />

@@ -1,0 +1,47 @@
+.single_layout{
+    width: 250px;
+    /* height: 300px; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: flex-end;
+    border:1px solid grey;
+ }
+ .driver_seat{
+    height: 50px;
+ }
+ .seat_layout_right, .seat_layout_left{
+    width: 40%;
+    /* border:1px solid grey; */
+    height: 90%;
+    padding: 10px 0;
+ }
+ .seater_row{
+    display: grid;
+    row-gap: 10px;
+ }
+ .seat_pair{
+    display: flex;
+    justify-content: space-around;
+ }
+ .seater{
+    width: 40%;
+    aspect-ratio: 1/1;
+    /* Add if not using autoprefixer */
+   -webkit-appearance: none;
+   appearance: none;
+   /* For iOS < 15 to remove gradient background */
+   background-color: #fff;
+   /* Not removed via appearance */
+   margin: 0;
+ }
+ .seater::before{
+    /* font-family: "Font Awesome 6 Free";
+    content: "\f236";
+    width: 40%;
+    aspect-ratio: 1/1; */
+    background-image: url('../assets/images//icons/seat.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+ }

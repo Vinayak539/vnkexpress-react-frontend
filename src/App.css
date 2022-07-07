@@ -142,6 +142,9 @@ a{
     color:#4c4c4c
 }
 
+.min-h-70{
+    min-height: 70vh;
+}
 /* special paddings */
 
 .p-m {

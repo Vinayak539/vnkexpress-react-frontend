@@ -33,7 +33,7 @@ header .logo img {
 }
 
 header .menu-symbol img {
-    width: 5%;
+    width: 6%;
     cursor: pointer;
 }
 
@@ -76,11 +76,13 @@ header .menu-symbol img {
 .side-nav .close {
     position: absolute;
     top: 10px;
-    right: 30px;
+    right: 10px;
     color: rgb(37, 37, 37);
     cursor: pointer;
 }
-
+.side-nav .close img{
+    width: 16px;
+}
 .side-nav .close h5 {
     font-size: 30px;
 }

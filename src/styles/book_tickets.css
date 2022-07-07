@@ -1,7 +1,11 @@
 .ticket_booking_section{
     padding:20px 0;
 }
-
+.destinationImage{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
 .form_grp_inner{
     padding: 6px 10px;
     border: 1px solid #d3d2d2;
@@ -33,4 +37,17 @@
     text-align: center;
     color:#fff;
     border:0
+}
+.form_row{
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .destinationImage{
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .destinationImage{
+        display: none;
+    }
 }

@@ -7,6 +7,8 @@ import Footer from '../components/footer';
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+import destinationImg from '../assets/images/icons/destination.png';
+
 import Select from 'react-select'
 
 export default function BookTickets() {
@@ -36,8 +38,14 @@ export default function BookTickets() {
     function getSourceAndDestinationData() {
         // const source =[];
         // const destination = [];
-        axios.get("https://secret-shelf-13291.herokuapp.com/routes")
-            .then((response) => {
+        axios.get("https://secret-shelf-13291.herokuapp.com/routes", {
+            method: "GET",
+            mode: "cors",
+            headers: {
+                // "Authorization": `Bearer: ${token}`,
+                "Content-Type": "application/json"
+            },
+        }).then((response) => {
                 console.log("Here are the available routes", response.data)
                 // sourceData = response.data.map((item)=>{
                 //     return {
@@ -55,19 +63,19 @@ export default function BookTickets() {
     }
 
     function searchBuses() {
-        if (!source) {
+        if (source!='' && source!=null) {
             setSourceErr(true);
             // console.log("No source", sourceErr);
         }else{
             setSourceErr(false);
         }
-        if (!destination) {
+        if (destination!='' && destination!=null) {
             setDestinationErr(true);
             // console.log("No soudestce", destinationErr);
         }else{
             setDestinationErr(false);
         }
-        if (!date) {
+        if (date!='' && date!=null) {
             setDateErr(true);
             // console.log("No date", dateErr);
         }else{
@@ -82,9 +90,9 @@ export default function BookTickets() {
     return (
         <div className='main'>
             <Header />
-            <section className="ticket_booking_section">
+            <section className="ticket_booking_section min-h-70">
                 <div className="container">
-                    <div className="row">
+                    <div className="row form_row">
                         <div className="col-lg-6 col-md-8">
                             <div className="search_buses_form">
                                 <h3 class="page_head">Search your bus here !</h3>
@@ -123,6 +131,9 @@ export default function BookTickets() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="col-lg-6 col-md-4">
+                            <img src={destinationImg} className="destinationImage" alt="destination"  />
                         </div>
                     </div>
                 </div>
