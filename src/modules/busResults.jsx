@@ -26,14 +26,14 @@ export default function BusResults(){
                         <div className="right_box">
                             <img src={busIcon} className="bus_icon"  alt="bus icon"/>
                             <div className="text">
-                                <h4 className="mb-0">2+2 semi sleeper</h4>
+                                <h6 className="mb-0">2+2 semi sleeper</h6>
                                 <p className="mb-0">5.00 pm - 6.00 am</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="left_box">
-                            <h4 className="mb-0">INR 1500</h4>
+                            <h5 className="mb-0">INR 1500</h5>
                             <span className="rating"><FaStar/> 4</span>
                         </div>
                     </div>
@@ -46,14 +46,14 @@ export default function BusResults(){
                         <div className="right_box">
                             <img src={busIcon} className="bus_icon"  alt="bus icon"/>
                             <div className="text">
-                                <h4 className="mb-0">2+2 semi sleeper</h4>
+                                <h6 className="mb-0">2+2 semi sleeper</h6>
                                 <p className="mb-0">5.00 pm - 6.00 am</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="left_box">
-                            <h4 className="mb-0">INR 1500</h4>
+                            <h5 className="mb-0">INR 1500</h5>
                             <span className="rating"><FaStar/> 4</span>
                         </div>
                     </div>
@@ -66,14 +66,14 @@ export default function BusResults(){
                         <div className="right_box">
                             <img src={busIcon} className="bus_icon"  alt="bus icon"/>
                             <div className="text">
-                                <h4 className="mb-0">2+2 semi sleeper</h4>
+                                <h6 className="mb-0">2+2 semi sleeper</h6>
                                 <p className="mb-0">5.00 pm - 6.00 am</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="left_box">
-                            <h4 className="mb-0">INR 1500</h4>
+                            <h5 className="mb-0">INR 1500</h5>
                             <span className="rating"><FaStar/> 4</span>
                         </div>
                     </div>
@@ -86,14 +86,14 @@ export default function BusResults(){
                         <div className="right_box">
                             <img src={busIcon} className="bus_icon"  alt="bus icon"/>
                             <div className="text">
-                                <h4 className="mb-0">2+2 semi sleeper</h4>
+                                <h6 className="mb-0">2+2 semi sleeper</h6>
                                 <p className="mb-0">5.00 pm - 6.00 am</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="left_box">
-                            <h4 className="mb-0">INR 1500</h4>
+                            <h5 className="mb-0">INR 1500</h5>
                             <span className="rating"><i className="fa fa-solid fa-star"></i> 4</span>
                         </div>
                     </div>
@@ -106,14 +106,14 @@ export default function BusResults(){
                         <div className="right_box">
                             <img src={busIcon} className="bus_icon"  alt="bus icon"/>
                             <div className="text">
-                                <h4 className="mb-0">2+2 semi sleeper</h4>
+                                <h6 className="mb-0">2+2 semi sleeper</h6>
                                 <p className="mb-0">5.00 pm - 6.00 am</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="left_box">
-                            <h4 className="mb-0">INR 1500</h4>
+                            <h5 className="mb-0">INR 1500</h5>
                             <span className="rating"><FaStar/> 4</span>
                         </div>
                     </div>

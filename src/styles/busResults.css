@@ -1,21 +1,21 @@
 .results_container{
-    background-color: rgb(254, 203, 203);
+    background-color: rgb(237 234 234);
     padding:20px 0
 }
 .single_result{
-    border-radius: 6px;
+    /* border-radius: 6px; */
     /* box-shadow: ; */
     background-color: #fff;
     margin-bottom: 10px;
-    padding:15px 10px;
+    padding:10px;
 }
 .right_box{
     display: flex;
     column-gap: 20px;
 }
 .right_box .bus_icon{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 .left_box .rating{
@@ -24,7 +24,7 @@
     align-items: center;
     grid-column-gap: 5px;
     column-gap: 5px;
-    font-size: 14px;
+    font-size: 10px;
     color: #fff;
     border-radius: 4px;
     display: inline-flex;

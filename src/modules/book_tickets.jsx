@@ -16,9 +16,9 @@ export default function BookTickets() {
     const [destinationErr, setDestinationErr] = useState(false);
     const [dateErr, setDateErr] = useState(false);
 
-    const [source, updateSource] = useState('');
-    const [date, updateDate] = useState('');
-    const [destination, updateDestination] = useState('');
+    const [sourceValue, updateSource] = useState('');
+    const [dateValue, updateDate] = useState('');
+    const [destinationValue, updateDestination] = useState('');
 
     useEffect(() => {
         getSourceAndDestinationData();
@@ -63,27 +63,27 @@ export default function BookTickets() {
     }
 
     function searchBuses() {
-        if (source!='' && source!=null) {
-            setSourceErr(true);
-            // console.log("No source", sourceErr);
+        if (sourceValue!='' && destinationValue!='' && dateValue!='') {
+            console.log("if cond satisfired",sourceValue, destinationValue, dateValue );
+            window.location.href = "/results" + "/" + sourceValue + "/" + destinationValue + "/" + dateValue
         }else{
-            setSourceErr(false);
-        }
-        if (destination!='' && destination!=null) {
-            setDestinationErr(true);
-            // console.log("No soudestce", destinationErr);
-        }else{
-            setDestinationErr(false);
-        }
-        if (date!='' && date!=null) {
-            setDateErr(true);
-            // console.log("No date", dateErr);
-        }else{
-            setDateErr(false);
-        }
-        if (!sourceErr && !destinationErr && !dateErr) {
-            // console.log("satisfired",sourceErr, destinationErr, dateErr );
-            window.location.href = "/results" + "/" + source + "/" + destination + "/" + date
+            if(sourceValue=='' || sourceValue==null){
+                setSourceErr(true);
+            }else{
+                setSourceErr(false);
+            }
+
+            if(destinationValue=='' || destinationValue==null){
+                setDestinationErr(true);
+            }else{
+                setDestinationErr(false);
+            }
+
+            if(dateValue=='' || dateValue==null){
+                setDateErr(true);
+            }else{
+                setDateErr(false);
+            }
         }
     }
 
@@ -101,7 +101,7 @@ export default function BookTickets() {
                                         <div className='form_grp'>
                                             <div className="form_grp_inner">
                                                 <label>Enter Source</label>
-                                                <Select options={sourceData} onChange={($event) => { updateSource($event.value); console.log($event.value,sourceErr ) }} />
+                                                <Select options={sourceData} onChange={($event) => { updateSource($event.value); console.log(sourceValue ) }} />
                                             </div>
                                             {sourceErr && <span class="text-danger">Please enter source</span>}
                                         </div>
@@ -110,7 +110,7 @@ export default function BookTickets() {
                                         <div className='form_grp'>
                                             <div className="form_grp_inner">
                                                 <label>Enter Destintion</label>
-                                                <Select options={destinationData} onChange={($event) => { updateDestination($event.value); console.log($event.value) }} />
+                                                <Select options={destinationData} onChange={($event) => { updateDestination($event.value); console.log(destinationValue) }} />
                                             </div>
                                             {destinationErr && <span class="text-danger">Please enter destination</span>}
                                         </div>
@@ -119,7 +119,7 @@ export default function BookTickets() {
                                         <div className='form_grp'>
                                             <div className="form_grp_inner">
                                                 <label for="date">Select Date</label>
-                                                <input type="date" name="date" id="date" onChange={($event) => { updateDate($event.target.value) }} />
+                                                <input type="date" name="date" id="date" onChange={($event) => { updateDate($event.target.value); console.log(dateValue) }} />
                                             </div>
                                             {dateErr && <span class="text-danger">Please enter date</span>}
                                         </div>
