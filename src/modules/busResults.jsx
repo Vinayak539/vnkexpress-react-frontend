@@ -13,7 +13,7 @@ export default function BusResults(){
     const {source, destination, date} = useParams();
     console.log("here are the params", source, destination, date);
 
-    axios.get("https://secret-shelf-13291.herokuapp.com/?source&destination&date")
+    axios.get("https://secret-shelf-13291.herokuapp.com/journey-details/?source&destination&date")
         .then((response) => console.log(response.data));
         
     return <div>

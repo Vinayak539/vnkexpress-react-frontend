@@ -5,7 +5,8 @@
     /* flex-direction: column; */
     justify-content: space-between;
     align-items: flex-end;
-    border:1px solid grey;
+    border:2px solid #c2c2c2;
+    border-radius: 10px;
  }
  .driver_seat{
     height: 50px;
@@ -24,24 +25,43 @@
     display: flex;
     justify-content: space-around;
  }
+ .single_seat{
+   position: relative;
+   width: 40%;
+   aspect-ratio: 1/1;
+ }
  .seater{
-    width: 40%;
-    aspect-ratio: 1/1;
+    width: 100%;
+    height:100%;
     /* Add if not using autoprefixer */
    -webkit-appearance: none;
    appearance: none;
    /* For iOS < 15 to remove gradient background */
-   background-color: #fff;
+   /* background-color: #fff; */
    /* Not removed via appearance */
    margin: 0;
+   position: relative;
+   z-index: 2;
+   cursor: pointer;
  }
- .seater::before{
-    /* font-family: "Font Awesome 6 Free";
-    content: "\f236";
-    width: 40%;
-    aspect-ratio: 1/1; */
-    background-image: url('../assets/images//icons/seat.png');
+ .seater+label{
+    background-image: url('../assets/images//icons/seat-available.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 1;
+ }
+ .seater:checked+label{
+   background-image: url('../assets/images//icons/seat-selected.png');
+ }
+
+ .text_info{
+   background-color: #e2e2e2;
  }

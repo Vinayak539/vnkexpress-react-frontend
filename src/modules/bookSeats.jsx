@@ -13,89 +13,195 @@ export default class BookSeats extends React.Component{
   render(){
     return( 
         <div>
-            <Header/>
-        <div className="py-2">
-            <div className="container py-2">
-                <div className="layout_container">
-                    <div className="single_layout">
-                    <div className="seat_layout_left">
-                        <div className="seats_row seater_row">
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
+        <Header/>
+            <div className="py-2">
+                <div className="container py-2">
+                    <div className="row">
+                    <div className="col-lg-4">
+                        <div className="layout_container">
+                            <div className="single_layout">
+                            <div className="seat_layout_left">
+                                <div className="seats_row seater_row">
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
+                            <div className="seat_layout_right">
+                                <div className="seats_row seater_row">
+                                    <div className="seat_pair driver_seat">
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                    <div className="seat_pair">
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    <div className="single_seat">
+                                        <input type="checkbox" className="seater"/>
+                                        <label></label>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
                             </div>
                         </div>
                     </div>
-                    <div className="seat_layout_right">
-                        <div className="seats_row seater_row">
-                            <div className="seat_pair driver_seat">
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
-                            <div className="seat_pair">
-                                <input type="checkbox" className="seater"/>
-                                <input type="checkbox" className="seater"/>
-                            </div>
+                    <div className="col-lg-8">
+                        <div className="text_info py-2">
+                            <h3 className="mb-0">Mumbai to Hyderabad</h3>
+                            <h4>6.00pm to 8.00am</h4>
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
-        </div>
         <Footer/>
         </div>
     )

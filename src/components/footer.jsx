@@ -14,7 +14,7 @@ function Footer(){
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="t-center white">Copyright &copy; 2021. vnk express Pvt. Ltd.</p>
+                {/* <p class="t-center white">Copyright &copy; 2021. vnk express Pvt. Ltd.</p> */}
             </div>
             <div class="social-links">
                 <a href="#"><img alt="some image" src={facebook} /></a>

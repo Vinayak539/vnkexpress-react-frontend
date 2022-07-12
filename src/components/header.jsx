@@ -20,7 +20,7 @@ function Header(){
             <div className="container p-0">
             <div class="inner"> 
                 <div class="logo">
-                    <a href="/"><img src={logo} alt="some image" /></a>
+                    {/* <a href="/"><img src={logo} alt="some image" /></a> */}
                 </div>
                 <div class="menu-symbol" onClick={()=>{setSideMenu(true)}}>
                 {/* onclick="openNav()" */}
@@ -36,7 +36,7 @@ function Header(){
                         <img src={closeMenu} alt="close menu"></img>
                     </div>
                     <div class="logo">
-                        <img src={menuLogo} alt="some image" />
+                        {/* <img src={menuLogo} alt="some image" /> */}
                     </div>
                     <div class="list">
                         <ul>
