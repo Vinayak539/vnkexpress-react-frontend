@@ -19,8 +19,8 @@ function Home(){
             <Header/>
             <Hero/>
             <Banner/>
-            <Offers/>
-            <AnimatedCards/>
+            {/* <Offers/> */}
+            {/* <AnimatedCards/> */}
             {/* <Discounts/> */}
             <Footer/>
            </div>

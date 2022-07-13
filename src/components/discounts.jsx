@@ -53,7 +53,7 @@ function Discounts(){
             <div class="col-12">
                 <Slider {...settings}>
                 <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
@@ -67,7 +67,7 @@ function Discounts(){
                     </div>
 
                     <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
@@ -83,7 +83,7 @@ function Discounts(){
                     </div>
 
                     <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
@@ -99,7 +99,7 @@ function Discounts(){
                     </div>
 
                     <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
@@ -115,7 +115,7 @@ function Discounts(){
                     </div>
 
                     <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
@@ -131,7 +131,7 @@ function Discounts(){
                     </div>
 
                     <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
@@ -146,7 +146,7 @@ function Discounts(){
                     </div>
 
                     <div class="box">
-                        <div class="head bg-purple">
+                        <div class="head bg-pink">
                             <h1>Flat 15% <span class="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>

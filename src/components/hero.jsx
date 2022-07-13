@@ -16,7 +16,7 @@ function Hero(){
                         <input type="text" name="name" placeholder="Name"/>
                         <input type="email" name="email" placeholder="Email"/>
                         <input type="number" name="contact" placeholder="Contact"/>
-                        <input type="submit" class="bg-purple white" value="Enquire Now"/>
+                        <input type="submit" class="bg-pink color-a" value="Enquire Now"/>
                     </form>
                 </div>
             </div>

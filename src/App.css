@@ -16,6 +16,63 @@
     Link:hover{
         text-decoration: none;
     }
+
+
+    /* font-sizes */
+    .f-10{
+        font-size: 10px;
+    }
+    .f-12{
+        font-size: 12px;
+    }
+    .f-14{
+        font-size: 14px;
+    }
+    .f-16{
+        font-size: 16px;
+    }
+    .f-18{
+        font-size: 18px;
+    }
+    .f-20{
+        font-size: 20px;
+    }
+
+
+    /* font-weights */
+    .fw-100{
+        font-weight: 100;
+    }
+    .fw-400{
+        font-weight: 400;
+    }
+    .fw-600{
+        font-weight: 600;
+    }
+    .fw-bold{
+        font-weight: bold;
+    }
+
+
+    /* colors */
+    .color-a{
+        color: #fff !important; 
+    }
+    .color-b{
+        color: #e2e2e2 !important; 
+    }
+    .color-c{
+        color: #747474 !important; 
+    }
+    .color-d{
+        color: #1d1d1d !important; 
+    }
+    .color-e{
+        color: #111 !important; 
+    }
+    .color-f{
+        color: #fd6c85 !important; 
+    }
   /* color codes 
   fonts : 
   #4c4c4c
@@ -144,32 +201,32 @@ a{
 }
 
 .min-h-70{
-    min-height: 70vh;
+    min-height: 70vh !important;
 }
 /* special paddings */
 
 .p-m {
-    padding: 60px 0px;
+    padding: 60px 0px !important;
 }
 
 .p-c {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
 }
 
 
 /* Text alignment */
 
 .t-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .t-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .t-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 
@@ -184,11 +241,13 @@ a{
 
 
 /* Background colors */
-
-.bg-purple {
+.bg-pink-gradient{
+    background: linear-gradient(to right, #fd6c85, #ffc5d1);
+}
+.bg-pink {
     /* background-image: linear-gradient(to right, #b354ce , #C039E6); */
     /* background: linear-gradient(to right, #FA5B76, #C039E6); */
-    background: linear-gradient(to right, #fd6c85, #e73a5d);
+    background: #fd6c85;
 }
 
 body {
@@ -244,7 +303,7 @@ body {
 
 .hero .hero-enq,
 .hero-home .hero-enq {
-    width: 70%;
+    width: 60%;
     margin: auto;
     padding: 40px 15px 20px;
     /* border:2px solid black; */
@@ -258,7 +317,7 @@ body {
 
 .hero .hero-enq:hover,
 .hero-home .hero-enq:hover {
-    box-shadow: 0 0 12px 2px #FA5B76;
+    /* box-shadow: 0 0 12px 2px #FA5B76; */
 }
 
 .hero .hero-enq form input,
@@ -266,7 +325,7 @@ body {
     display: block;
     width: 100%;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 7px;
     border: none;
     border-radius: 3px;
 }
@@ -336,7 +395,7 @@ body {
 }
 
 .banner p {
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .offer {
@@ -419,15 +478,36 @@ body {
 }
 
 .footer {
-    background: #111;
-    padding: 30px 10px 20px;
+    /* background: #111; */
+    padding: 30px 0px 0px;
+    /* border-top: 1px solid #e2e2e2; */
+    background: #f5f5f5;
 }
-
+.footer_links a{
+    display: block;
+    font-size: 14px;
+    color: #747474;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: quicksand;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.footer .social-links-head{
+    text-align: center;
+}
+.footer_links a:hover{
+    color: #1d1d1d;
+}
 .footer p {
-    font-size: 16px;
+    /* font-size: 16px; */
     margin: 0;
 }
-
+.copyright-area{
+    background: #111;
+    padding: 15px 0;
+    margin-top: 15px;
+}
 .footer .social-links {
     margin: auto;
     text-align: center;
@@ -439,7 +519,7 @@ body {
 }
 
 .footer .social-links a img {
-    width: 30px;
+    width: 20px;
 }
 
 
@@ -535,13 +615,16 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+    .footer .social-links-head, .footer .social-links{
+        text-align: left;
+    }
     .page_head{
         font-size: 32px;
         margin-bottom: 10px;
     }
     .hero .hero-enq,
     .hero-home .hero-enq {
-        width: 90%;
+        width: 80%;
         margin: 30px auto;
     }
     .offer .box {
@@ -596,7 +679,7 @@ body {
 @media only screen and (max-width: 575px) {
     .hero .hero-enq,
     .hero-home .hero-enq {
-        width: 100%;
+        width: 90%;
     }
     .footer .social-links a {
         margin: 6px;

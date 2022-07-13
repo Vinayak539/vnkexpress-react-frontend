@@ -29,7 +29,7 @@ header .menu-symbol {
 }
 
 header .logo img {
-    width: 40%;
+    width: 30%;
 }
 
 header .menu-symbol img {
@@ -114,13 +114,13 @@ header .menu-symbol img {
 
 .side-nav .list ul li a {
     display: block;
-    padding: 15px 5px;
+    padding: 10px 5px;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     color: #454545;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Jost', sans-serif;
 }
 
@@ -131,11 +131,11 @@ header .menu-symbol img {
 
 .side-nav .list ul li:hover {
     /* background-image: linear-gradient(to right, #FA5B76, #C039E6); */
-    background: linear-gradient(to right, #fd6c85, #e73a5d);
+    background: #fd6c85
 }
 
 .side-nav .list ul li:hover a {
-    color: white;
+    color: #fff;
 }
 
 
@@ -145,7 +145,7 @@ header .menu-symbol img {
         width: 50%;
     } */
     header .logo img {
-        width: 60%;
+        /* width: 60%; */
     }
 }
 
@@ -162,7 +162,7 @@ header .menu-symbol img {
         padding: 20px;
     }
     header .logo img {
-        width: 70%;
+        width: 60%;
     }
     header .menu-symbol img {
         width: 18%;
@@ -175,7 +175,7 @@ header .menu-symbol img {
         width: 300px;
     }
     header .logo img {
-        width: 80%;
+        width: 60%;
     }
     header {
         padding: 10px 20px;
@@ -189,7 +189,7 @@ header .menu-symbol img {
         width: 320px;
     }
     header .logo img {
-        width: 100%;
+        width: 70%;
     }
     header {
         padding: 10px 15px;

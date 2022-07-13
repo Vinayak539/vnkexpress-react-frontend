@@ -126,8 +126,8 @@ export default function BookTickets() {
                                     </div>
                                     <div className="col-md-6"></div>
                                     <div className="col-md-6">
-                                        <input type="submit" value="Search Buses" class="bg-purple submit_btn" onClick={() => { searchBuses() }} />
-                                        {/* <Link to={"/results"+ "/"+source+"/"+destination+"/"+date} class="bg-purple submit_btn">Search Buses</Link> */}
+                                        <input type="submit" value="Search Buses" class="bg-pink submit_btn color-a" onClick={() => { searchBuses() }} />
+                                        {/* <Link to={"/results"+ "/"+source+"/"+destination+"/"+date} class="bg-pink submit_btn">Search Buses</Link> */}
                                     </div>
                                 </div>
                             </div>
