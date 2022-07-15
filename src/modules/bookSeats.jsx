@@ -10,12 +10,20 @@ import '../styles/bookSeats.css';
 import reactSelect from 'react-select';
 
 export default class BookSeats extends React.Component{
+    constructor(){
+        super();
+        this.state = {stateVal: 1}
+    }
   render(){
     return( 
         <div>
         <Header/>
             <div className="py-2">
                 <div className="container py-2">
+                    <div className="pactice my-5 py-5">
+                        <p>Counter Value is {this.state.stateVal}</p>
+                        <button onClick={()=>{this.setState(this.state.stateVal=3)}}>Here</button>
+                    </div>
                     <div className="row">
                     <div className="col-lg-4">
                         <div className="layout_container">
