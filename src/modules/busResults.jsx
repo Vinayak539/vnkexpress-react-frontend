@@ -13,8 +13,54 @@ export default function BusResults() {
     const { source, destination, date } = useParams();
     console.log("here are the params", source, destination, date);
 
-    axios.get("https://secret-shelf-13291.herokuapp.com/journey-details/?source&destination&date")
-        .then((response) => console.log(response.data));
+    
+
+    // axios.get("https://secret-shelf-13291.herokuapp.com/journey-details/?source&destination&date")
+    //     .then((response) => console.log(response.data));
+
+
+
+        var promise = new Promise((resolve, reject)=>{
+            var result;
+            setTimeout(()=>{
+                axios.get("https://api2.binance.com/api/v3/ticker/24hr")
+                .then((response) =>{
+                    if(response.data){
+                        resolve("resolved");
+                    }else{
+                        reject("There is an error");
+                    }
+                    // console.log("Here is the api response inside promise", response.data);
+                    // result = response.data;
+                    
+                }) 
+            }, 1000)
+        });
+
+        async function showRsults(){
+            var temp;
+            // promise.then((result)=>{
+            //     temp = result;
+            //     console.log("here is the val of temp", temp);
+            // })
+            promise
+            .then((resolved)=>{
+                console.log("Promise resolved", resolved);
+            })
+            .catch((rejected)=>{
+                console.log("The promise is rejected", rejected);
+            })
+            .finally(()=>{
+                console.log("promise settled");
+            });
+            // setTimeout(()=>{
+            //     console.log("here is the val of temp after 1 sec", temp);
+            // }, 1000);
+        }
+
+        showRsults();
+
+
 
     return <div>
         <Header />
