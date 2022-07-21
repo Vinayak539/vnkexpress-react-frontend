@@ -15,7 +15,7 @@ function PracticeFunction(props) {
   function reducer(state, action) {
     switch (action.type) {
       case "FUN1":
-        return { count: state.count + 1, name: state.name + "ravi" };
+        return state.count = state.count + 1;
       case "FUN2":
         return { count: state.count + 1, name: state.name + "surshetty" };
       default:

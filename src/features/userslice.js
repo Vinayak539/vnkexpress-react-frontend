@@ -1,14 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+const initialState = {name: 'Vinayak', age: 22, company: 'Techsperia'};
+
 export const userSlice = createSlice({
    name : "user",
-   initialValue : {value : {name: 'Vinayak', age: 22, company: 'Techsperia'}},
+   initialState : {value : initialState},
    reducers:{
-      updateName : (value)=>{
-          value.name = 'Vinayak Surshetty';
+      updateName : (state)=>{
+          state.value.name = 'Vinayak Surshetty';
       },
-      updateCompany : (value)=>{
-         return {name: 'Vinayak', age: 22, company: 'Sanjare'}
+      updateCompany : (state)=>{
+         state.value = {name: 'Vinayak', age: 22, company: 'Sanjare'};
       }
    },
 })
