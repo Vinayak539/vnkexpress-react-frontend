@@ -18,7 +18,7 @@ function App() {
             <Route path="/aboutus" element={ <About/> } />
             <Route path="/tickets" element={ <BookTickets/> } />
             {/* <Route path="/practice" element={ <Practice name="Vinayak"/> } /> */}
-            <Route path="/practice" element={ <PracticeFunction/> } />
+            <Route path="/practice" element={ <PracticeFunction name="rushabh" /> } />
             <Route path="/results/:source/:destination/:date" element={ <BusResults/> } />
             <Route path="/book-seats" element={ <BookSeats/> } />
         </Routes>

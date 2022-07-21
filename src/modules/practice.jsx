@@ -1,8 +1,10 @@
 // import React from 'react-dom';
 import React, { useState, useReducer, useRef } from "react";
+import {useSelector} from 'react-redux';
 
-function PracticeFunction() {
+function PracticeFunction(props) {
   const inputReference = useRef(null);
+  const user = useSelector((state)=>{return state.user.value});
   const [state, dispatch] = useReducer(reducer, { count: 0, name: "vinayak" });
   const [myObj, setMyObj] = useState({
     show1: true,
@@ -40,6 +42,7 @@ function PracticeFunction() {
   return (
     <div class="px-3 py-5">
       <h1>Welcome to practice function</h1>
+      <h3>my name is {props.name}</h3>
       <h4>Here is the counter value {state.count}</h4>
       <h5>Here is the name {state.name}</h5>
       <input type="text" ref={inputReference} className="text-input myinput" />
@@ -56,6 +59,10 @@ function PracticeFunction() {
         {myObj.show2 && <h2>This is show 2</h2>}
         {myObj.show3 && <h2>This is show 3</h2>}
       </div>
+
+      <div className="my-3">
+      <p>Here are the details: name - {user.name} and age - {user.age} and company - {user.company}</p>
+      </div>
     </div>
   );
 }
@@ -68,6 +75,7 @@ class Practice extends React.Component {
       count: 0,
       name: "surshetty",
     };
+
   }
   handleClick() {
     this.setState({ count: this.state.count + 1, name: this.state.name });
@@ -78,6 +86,7 @@ class Practice extends React.Component {
         This is a class component {this.props.name} and the surname name is{" "}
         {this.state.name}
         <h4>Here is the count {this.state.count}</h4>
+        
         <button
           onClick={() => {
             this.handleClick();
