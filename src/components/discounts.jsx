@@ -47,115 +47,115 @@ function Discounts(){
       };
 
 
-    return   <div class="slider-content p-m">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
+    return   <div className="slider-content p-m">
+    <div className="container-fluid">
+        <div className="row">
+            <div className="col-12">
                 <Slider {...settings}>
-                <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                    <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                    <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                    <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                    <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                    <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>Very warm welcome to our precious customers. We the team of vnk express thank you for choosing our service and 
                                 we will try our best to provide you the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="head bg-pink">
-                            <h1>Flat 15% <span class="small">off /-</span></h1>
+                    <div className="box">
+                        <div className="head">
+                            <h1>Flat 15% <span className="small">off /-</span></h1>
                             <h5>On Return Tickets !</h5>
                         </div>
-                        <div class="content">
+                        <div className="content">
                             <p>the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and the buses in our fleet
                                 the best in class service in terms of comfort and safety for your trip. 
                                 We have daily bus service and t</p>
-                                <a href="" class="offerBtn">Get It</a>
+                                <a href="" className="offerBtn bg-pink">Get It</a>
                         </div>
                     </div>
                 </Slider>

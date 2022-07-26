@@ -1,9 +1,10 @@
 // import React from 'react-dom';
-import React, { useState, useReducer, useRef } from "react";
+import React, { useState, useReducer, useRef, useEffect, useLayoutEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateName } from "../features/userslice";
 import {updateInfo} from '../features/infoSlice';
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 function PracticeFunction(props) {
   const inputReference = useRef(null);
@@ -16,6 +17,15 @@ function PracticeFunction(props) {
   const userDispatch = useDispatch();
 
 
+
+  useEffect(()=>{
+    var a = $('.heading');
+    console.log("This is useEffect", a.attr('class'));
+  }, []);
+
+  useLayoutEffect(()=>{
+    console.log("This is useLayoutEffect");
+  }, []);
 
 
 
@@ -81,7 +91,7 @@ function PracticeFunction(props) {
   return (
     <div class="px-3 py-5">
       <div className="my-3">
-        <h1>Hey !! here is the redux section</h1>
+        <h1 className="heading">Hey !! here is the redux section</h1>
         <h5>Here are the details:</h5>
         <p className="mb-0">Name - {user.name} </p>
         <p className="mb-0">Age - {user.age} </p>
@@ -161,11 +171,11 @@ class Practice extends React.Component {
       name: "surshetty",
     };
   }
-  shouldComponentUpdate(){
-    return false;
-  }
+  // shouldComponentUpdate(){
+  //   return false;
+  // }
   handleClick() {
-    this.setState({ count: this.state.count + 1, name: this.state.name });
+    this.setState({ ...this.state, count: this.state.count + 1 });
   }
   render() {
     return (

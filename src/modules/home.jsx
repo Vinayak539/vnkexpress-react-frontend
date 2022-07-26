@@ -21,7 +21,7 @@ function Home(){
             <Banner/>
             {/* <Offers/> */}
             {/* <AnimatedCards/> */}
-            {/* <Discounts/> */}
+            <Discounts/>
             <Footer/>
            </div>
 }
