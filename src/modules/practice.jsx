@@ -171,9 +171,28 @@ class Practice extends React.Component {
       name: "surshetty",
     };
   }
-  // shouldComponentUpdate(){
-  //   return false;
-  // }
+  static getDerivedStateFromProps(props, state){
+    console.log("Here are the deried values", props.name, state.count);
+  }
+  componentDidMount(){
+    console.log("Component Mounted");
+  }
+  shouldComponentUpdate(){
+    return true;
+  }
+
+  componentDidUpdate(){
+    alert("Component is updated");
+  }
+
+  componentWillUnmount(){
+    console.log("component is unmounting");
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState){
+    console.log("prev value is", prevState.count);
+  }
+
   handleClick() {
     this.setState({ ...this.state, count: this.state.count + 1 });
   }
