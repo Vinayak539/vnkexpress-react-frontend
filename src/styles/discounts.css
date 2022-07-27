@@ -78,7 +78,13 @@
     padding: 10px;
     text-decoration: none;
 }
-
+.slick-slider{
+    max-width: 100%;
+    overflow: hidden;
+}
+.slick-list{
+    height: 400px;
+}
 
 @media (max-width: 768px){
     .slick-track{
