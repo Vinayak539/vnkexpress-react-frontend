@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "../styles/book_tickets.css";
@@ -25,20 +25,20 @@ export default function BookTickets() {
     }, [])
 
     var sourceData = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
+        // { value: 'chocolate', label: 'Chocolate' },
+        // { value: 'strawberry', label: 'Strawberry' },
+        // { value: 'vanilla', label: 'Vanilla' }
     ]
     var destinationData = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
+        // { value: 'chocolate', label: 'Chocolate' },
+        // { value: 'strawberry', label: 'Strawberry' },
+        // { value: 'vanilla', label: 'Vanilla' }
     ]
 
-    function getSourceAndDestinationData() {
+    var getSourceAndDestinationData = useCallback(()=> {
         // const source =[];
         // const destination = [];
-        axios.get("https://secret-shelf-13291.herokuapp.com/routes", {
+        axios.get("http://localhost:5000/routes", {
             method: "GET",
             mode: "cors",
             headers: {
@@ -46,21 +46,23 @@ export default function BookTickets() {
                 "Content-Type": "application/json"
             },
         }).then((response) => {
-                console.log("Here are the available routes", response.data)
-                // sourceData = response.data.map((item)=>{
-                //     return {
-                //         value: item.source,
-                //         label: item.source
-                //     }
-                // })
-                // destinationData = response.data.map((item)=>{
-                //     return {
-                //         value: item.destination,
-                //         label: item.destination
-                //     }
-                // })
+                // console.log("Here are the available routes", response.data)
+                sourceData = response.data.map((item)=>{
+                    return {
+                        value: item.source,
+                        label: item.source
+                    }
+                })
+                destinationData = response.data.map((item)=>{
+                    return {
+                        value: item.destination,
+                        label: item.destination
+                    }
+                })
+                console.log("Here are the available routes", destinationData);
             });
-    }
+    }, []);
+   
 
     function searchBuses() {
         if (sourceValue!='' && destinationValue!='' && dateValue!='') {
