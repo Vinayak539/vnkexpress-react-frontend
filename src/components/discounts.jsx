@@ -21,7 +21,7 @@ function Discounts(){
         // initialSlide: 0,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1440,
             settings: {
               slidesToShow: 4,
               slidesToScroll: 1,

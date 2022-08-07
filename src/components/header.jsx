@@ -36,7 +36,7 @@ function Header(){
                         <img src={closeMenu} alt="close menu"></img>
                     </div>
                     <div class="logo">
-                        {/* <img src={menuLogo} alt="some image" /> */}
+                        <img src={menuLogo} alt="some image" />
                     </div>
                     <div class="list">
                         <ul>

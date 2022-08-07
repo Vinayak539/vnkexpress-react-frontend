@@ -20,20 +20,15 @@ export default function BookTickets() {
     const [dateValue, updateDate] = useState('');
     const [destinationValue, updateDestination] = useState('');
 
+
+    const [sourceDestValues, setValues] = useState({sourceData:[], destinationData:[]})
+
     useEffect(() => {
         getSourceAndDestinationData();
+        var minDate = new Date().toLocaleString().split(",")[0].replace("/", "-");
+        console.log(minDate);
     }, [])
 
-    var sourceData = [
-        // { value: 'chocolate', label: 'Chocolate' },
-        // { value: 'strawberry', label: 'Strawberry' },
-        // { value: 'vanilla', label: 'Vanilla' }
-    ]
-    var destinationData = [
-        // { value: 'chocolate', label: 'Chocolate' },
-        // { value: 'strawberry', label: 'Strawberry' },
-        // { value: 'vanilla', label: 'Vanilla' }
-    ]
 
     var getSourceAndDestinationData = useCallback(()=> {
         // const source =[];
@@ -47,19 +42,20 @@ export default function BookTickets() {
             },
         }).then((response) => {
                 // console.log("Here are the available routes", response.data)
-                sourceData = response.data.map((item)=>{
+                var sources = response.data.map((item)=>{
                     return {
                         value: item.source,
                         label: item.source
                     }
                 })
-                destinationData = response.data.map((item)=>{
+                var destinations = response.data.map((item)=>{
                     return {
                         value: item.destination,
                         label: item.destination
                     }
                 })
-                console.log("Here are the available routes", destinationData);
+                setValues({sourceData:sources, destinationData:destinations });
+                // console.log("Here are the available routes", sourceData, destinationData);
             });
     }, []);
    
@@ -103,7 +99,7 @@ export default function BookTickets() {
                                         <div className='form_grp'>
                                             <div className="form_grp_inner">
                                                 <label>Enter Source</label>
-                                                <Select options={sourceData} onChange={($event) => { updateSource($event.value); console.log(sourceValue ) }} />
+                                                <Select options={sourceDestValues.sourceData} onChange={($event) => { updateSource($event.value); console.log(sourceValue ) }} />
                                             </div>
                                             {sourceErr && <span class="text-danger">Please enter source</span>}
                                         </div>
@@ -112,7 +108,7 @@ export default function BookTickets() {
                                         <div className='form_grp'>
                                             <div className="form_grp_inner">
                                                 <label>Enter Destintion</label>
-                                                <Select options={destinationData} onChange={($event) => { updateDestination($event.value); console.log(destinationValue) }} />
+                                                <Select options={sourceDestValues.destinationData} onChange={($event) => { updateDestination($event.value); console.log(destinationValue) }} />
                                             </div>
                                             {destinationErr && <span class="text-danger">Please enter destination</span>}
                                         </div>

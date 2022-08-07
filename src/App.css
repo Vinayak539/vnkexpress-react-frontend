@@ -524,7 +524,8 @@ body {
   /* background: #111; */
   padding: 30px 0px 0px;
   /* border-top: 1px solid #e2e2e2; */
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
+  background-color: #fff;
 }
 .footer_links a {
   display: block;

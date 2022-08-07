@@ -51,6 +51,7 @@
     /* aspect-ratio: 1/.8; */
     height: 200px;
     overflow-y: auto;
+    background-color: #fff;
 }
 .slider-content .box .content p{
     display: -webkit-box;
