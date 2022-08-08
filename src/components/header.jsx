@@ -27,7 +27,7 @@ function Header(){
                     <img src={menuImg} alt="some image" />
                 </div>
             </div>
-            <div class="side_nav_clip" style={openSideMenu ? { 'clipPath': 'circle(1000px at 100% 0)' } : { 'clipPath': 'circle(0 at 100% 0)' }}>
+            <div class="side_nav_clip" style={openSideMenu ? { 'clipPath': 'circle(1400px at 100% 0)' } : { 'clipPath': 'circle(0 at 100% 0)' }}>
                 <nav class="side-nav">
                     <div class="poly"></div>
                     <div class="close" onClick={()=>{setSideMenu(false)}}>

@@ -43,7 +43,7 @@ function Footer() {
             </div>
         </div>
         <div className="copyright-area">
-                <p class="t-center color-a f-12">Copyright &copy; 2021. vnk express pvt. ltd.</p>
+                <p class="t-center color-a f-16">Copyright &copy; 2021. vnk express pvt. ltd.</p>
         </div>
     </div>
 }
