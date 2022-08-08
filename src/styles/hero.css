@@ -1,9 +1,21 @@
 .slider_container {
-    height: 80vh;
+    /* height: 80vh; */
 }
 .slider_container .slider, .slider_container .slider img{
     height: 100%;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+.slick-slide{
+    margin: 0 !important;
+}
+.slick-slider, .slick-list, .slick-track{
+    height: 100% !important;
+}
+
+@media(max-width: 768px){
+    .slider_container{
+        height: auto;
+    }
 }
