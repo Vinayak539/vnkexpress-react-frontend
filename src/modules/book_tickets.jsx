@@ -25,7 +25,9 @@ export default function BookTickets() {
 
     useEffect(() => {
         getSourceAndDestinationData();
-        var minDate = new Date().toLocaleString().split(",")[0].replace("/", "-");
+        // var minDate = new Date().toLocaleString().split(",")[0].split("/").join("-");
+        let options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+        var minDate = new Intl.DateTimeFormat().format(new Date()).split("/").join("-");
         console.log(minDate);
     }, [])
 

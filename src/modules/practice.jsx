@@ -31,11 +31,11 @@ export function PracticeFunction(props) {
       console.log(response.data); 
       dispatch({type: "updateNames", payload:response.data});
     });
-    axios.get("https://gorest.co.in/public/v2/posts")
-    .then((response) => {
-      console.log(response.data); 
-      dispatch({type: "updatePropertyPosts", payload:response.data});
-    });
+    // axios.get("https://gorest.co.in/public/v2/posts")
+    // .then((response) => {
+    //   console.log(response.data); 
+    //   dispatch({type: "updatePropertyPosts", payload:response.data});
+    // });
   }, []);
 
   const reducer = (state, action)=>{
