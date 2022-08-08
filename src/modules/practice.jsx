@@ -19,10 +19,47 @@ import Prac1 from "../components/prac1";
 import Prac2 from "../components/prac2";
 
 import {MyContext} from '../App';
+import axios from "axios";
 
 export function PracticeFunction(props) {
   const [state, setState] = useState(0);
   const [pstate, setPstate] = useState("Initial Value");
+
+  useEffect(()=>{
+    axios.get("https://gorest.co.in/public/v2/users")
+    .then((response) => {
+      console.log(response.data); 
+      dispatch({type: "updateNames", payload:response.data});
+    });
+    axios.get("https://gorest.co.in/public/v2/posts")
+    .then((response) => {
+      console.log(response.data); 
+      dispatch({type: "updatePropertyPosts", payload:response.data});
+    });
+  }, []);
+
+  const reducer = (state, action)=>{
+    // console.log("Here are the actions", state, action)
+    switch (action.type) {
+      case "update":
+        return (state.name1 = "Vinayak");
+        case "updateNames":
+          var names = action.payload.map((item)=>item.name);
+          return {...state, names : names};
+        case "updatePropertyPosts":
+          var posts = action.payload.map((item)=>{
+            return {'title': item.title, 'body': item.body}
+          })
+          console.log("here are the posts", {...state, properties:{...state.properties, posts : posts}});
+          return {...state, properties:{...state.properties, posts : posts}};
+          // (state.properties.posts = action.payload.map((item)=>item.name));
+        default:
+          return state;
+    }
+  }
+
+  const [myreducer, dispatch] = useReducer(reducer, {names:[], properties:{name:'posts', posts: []}});
+  // console.log("Logging the myreducer", myreducer.properties.name);
 
   // var myOwnContext = useContext(MyContext);
   // console.log("This is the context", myOwnContext.theme);
@@ -50,14 +87,44 @@ export function PracticeFunction(props) {
   useMemo(()=>{
     expensiveFunction();
   }, [pstate]);
+
+  const resolveReducer = useCallback(()=>{
+    console.log("calling dispatch");
+    dispatch({type: "update"});
+  }, []);
+
   return (
-    <div className="py-3">
-      <h2>Hey this is the main practice module!!</h2>
-      <button onClick={() => { setState(state + 1); }}> Count {state} </button>
-      <button onClick={() => { setPstate(pstate + 1); }}> Pstate {pstate} </button>
-      <h3>Here is a function {pstate}</h3>
-      <Prac1 />
-      <Prac2 />
+    <div className="px-3 py-3">
+      <div className="px-3 py-3">
+         <h2>Hey this is the main practice module!!</h2>
+          <button onClick={() => { setState(state + 1); }}> Count {state} </button>
+          <button onClick={() => { setPstate(pstate + 1); }}> Pstate {pstate} </button>
+          <h3>Here is a function {pstate}</h3>
+          <Prac1 />
+          <Prac2 />
+      </div>
+      <hr/>
+      <div className="px-3 py-3">
+        <h2>Hey here we are using useReducer</h2>
+        <p>Here are the names : <br/> {(myreducer.names.length>0 && myreducer.names!=null) && myreducer.names.join(",\t")}</p>
+        {
+        myreducer.properties.posts.length && 
+        <div>
+          {
+          myreducer.properties.posts.map((item)=>{
+            <div>
+              <p className="m-0">title : {item.title}</p>
+              <p className="m-0">body : {item.body}</p>
+            </div>
+          })
+          }
+        </div>
+        }
+
+        {/* <p>We have Properties with name {myreducer.properties.name}</p> */}
+        {/* <p>We have Properties with name {myreducer.properties.name}</p> */}
+        {/* <button onClick={()=>{resolveReducer()}}>Update records</button> */}
+      </div>
     </div>
   );
 }
